@@ -1,5 +1,6 @@
-<ion-tabs>
-  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>
+<ion-tabs [color]="isAndroid ? 'danger' : 'primary'">
+  <ion-tab [root]="tab1Root" tabTitle="订单管理" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="菜品管理" tabIcon="list"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="销量统计" tabIcon="stats"></ion-tab>
+  <ion-tab [root]="tab4Root" tabTitle="更多" tabIcon="more"></ion-tab>
 </ion-tabs>

@@ -1,17 +1,79 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar [color]="isAndroid ? 'danger' : 'primary'">
+    <ion-title>订单列表</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content class="list-avatar-page">
+
+<ion-card>
+  <ion-card-header>
+    订单号：20170703
+  </ion-card-header>
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="http://img2.3lian.com/2014/c7/74/d/97.jpg">
+      </ion-avatar>
+      <h2>红烧肉</h2>
+      <p>单价： 12.00元</p>
+      <ion-badge item-end>X 1</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="http://site.meishij.net/r/21/119/2654771/s2654771_142537434549043.jpg">
+      </ion-avatar>
+      <h2>青椒肉丝</h2>
+      <p>单价： 14.00元</p>
+      <ion-badge item-end>X 2</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="http://i3.meishichina.com/attachment/recipe/2012/10/14/20121014210158408898425.jpg@!c320">
+      </ion-avatar>
+      <h2>白饭</h2>
+      <p>单价：2.00元</p>
+      <ion-badge item-end>X 5</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="http://i3.meishichina.com/attachment/recipe/2015/06/01/c640_201506011433146195575.jpg@!c320">
+      </ion-avatar>
+      <h2>麻婆豆腐</h2>
+      <p>单价： 3.90元</p>
+      <ion-badge item-end>X 9</ion-badge>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-9 push-3>
+          时间： 14:32 合计： 100.00元
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon ios="ios-checkmark-circle" md="md-checkmark-circle"></ion-icon>
+        <div>完成</div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon ios="ios-close-circle" md="md-close-circle"></ion-icon>
+        <div>取消</div>
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-card>
+
+
 </ion-content>

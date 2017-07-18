@@ -1,0 +1,200 @@
+<ion-header>
+  <ion-navbar [color]="isAndroid ? 'danger' : 'primary'">
+    <ion-title>菜品列表</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openNewDishPage()">
+          <ion-icon ios="ios-add" md="md-add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="outer-content">
+  <ion-list>
+    <ion-list-header>
+      烧菜
+    </ion-list-header>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="http://images.zuofan.cn/allimg/130301/22232V112-0.jpg">
+        </ion-avatar>
+        <h2>魔芋烧鸭</h2>
+        <p>单价：12.00</p>
+        <ion-badge item-end>销量：120</ion-badge>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light" icon-start>
+          <ion-icon name="ios-more"></ion-icon>
+          编辑
+        </button>
+        <button ion-button color="primary" icon-start>
+          <ion-icon name="arrow-round-up"></ion-icon>
+          下架/上架
+        </button>
+        <button ion-button color="secondary" icon-start>
+          <ion-icon name="trash"></ion-icon>
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="http://i3.meishichina.com/attachment/recipe/2016/06/01/201606011464760591190110319.jpg@!p800">
+        </ion-avatar>
+        <h2>红烧鲤鱼</h2>
+        <p>单价：13.00</p>
+        <ion-badge item-end>销量：120</ion-badge>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light" icon-start>
+          <ion-icon name="ios-more"></ion-icon>
+          编辑
+        </button>
+        <button ion-button color="primary" icon-start>
+          <ion-icon name="arrow-round-up"></ion-icon>
+          下架/上架
+        </button>
+        <button ion-button color="secondary" icon-start>
+          <ion-icon name="trash"></ion-icon>
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="http://i3.meishichina.com/attachment/recipe/201105/201105102010360.JPG@!p800">
+        </ion-avatar>
+        <h2>红烧团鱼</h2>
+        <p>单价：58.00</p>
+        <ion-badge item-end>销量：120</ion-badge>        
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light" icon-start>
+          <ion-icon name="ios-more"></ion-icon>
+          编辑
+        </button>
+        <button ion-button color="primary" icon-start>
+          <ion-icon name="arrow-round-up"></ion-icon>
+          下架/上架
+        </button>
+        <button ion-button color="secondary" icon-start>
+          <ion-icon name="trash"></ion-icon>
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="http://images.meishij.net/p/20100630/4d391ce11f34e3e6f4750ab5c3d9de28.jpg">
+        </ion-avatar>
+        <h2>伤心凉粉</h2>
+        <p>单价：13.50</p>
+        <ion-badge item-end>销量：120</ion-badge>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light" icon-start>
+          <ion-icon name="ios-more"></ion-icon>
+          编辑
+        </button>
+        <button ion-button color="primary" icon-start>
+          <ion-icon name="arrow-round-up"></ion-icon>
+          下架/上架
+        </button>
+        <button ion-button color="secondary" icon-start>
+          <ion-icon name="trash"></ion-icon>
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      炒菜
+    </ion-list-header>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="http://i3.meishichina.com/attachment/recipe/2013/12/13/20131213172507202152489.jpg@!p800">
+        </ion-avatar>
+        <h2>鱼香肉丝</h2>
+        <p>单价：18.00</p>
+        <ion-badge item-end>销量：120</ion-badge>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light" icon-start>
+          <ion-icon name="ios-more"></ion-icon>
+          编辑
+        </button>
+        <button ion-button color="primary" icon-start>
+          <ion-icon name="arrow-round-up"></ion-icon>
+          下架/上架
+        </button>
+        <button ion-button color="secondary" icon-start>
+          <ion-icon name="trash"></ion-icon>
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="https://github.com/ionic-team/ionic-preview-app/blob/master/src/assets/img/gozer.png?raw=true">
+        </ion-avatar>
+        <h2>红萝卜炒牛肉</h2>
+        <p>单价：12.00</p>
+        <ion-badge item-end>销量：120</ion-badge>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light" icon-start>
+          <ion-icon name="ios-more"></ion-icon>
+          编辑
+        </button>
+        <button ion-button color="primary" icon-start>
+          <ion-icon name="arrow-round-up"></ion-icon>
+          下架/上架
+        </button>
+        <button ion-button color="secondary" icon-start>
+          <ion-icon name="trash"></ion-icon>
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="http://i3.meishichina.com/attachment/recipe/201109/201109131526280.jpg@!p800">
+        </ion-avatar>
+        <h2>青椒肉丝</h2>
+        <p>单价：28.00</p>
+        <ion-badge item-end>销量：120</ion-badge>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light" icon-start>
+          <ion-icon name="ios-more"></ion-icon>
+          编辑
+        </button>
+        <button ion-button color="primary" icon-start>
+          <ion-icon name="arrow-round-up"></ion-icon>
+          下架/上架
+        </button>
+        <button ion-button color="secondary" icon-start>
+          <ion-icon name="trash"></ion-icon>
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+
+</ion-content>

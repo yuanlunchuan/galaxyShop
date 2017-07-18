@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar [color]="isAndroid ? 'danger' : 'primary'">
+    <ion-title>
+      新增菜品
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>菜品名称</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>菜品单价</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="true"></ion-toggle>
+      <ion-label>
+        开启微信支付
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <button ion-botton (click)="openDishGroupIndex()">
+        菜品分类   炒菜
+        <ion-icon name="arrow-forward" item-end></ion-icon>
+      </button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>菜品描述</ion-label>
+      <ion-textarea placeholder="菜品描述"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <div class="add-img" (click)="capture()">
+        <ion-icon name="add"></ion-icon>
+      </div>
+    </ion-item>
+
+   <ion-item>
+     <ion-row>
+       <ion-col width-50>
+         <button ion-button color="danger" type="button" full round large (click)="takePhoto()">
+           <ion-icon name="camera"></ion-icon>
+         </button>
+       </ion-col>
+       <ion-col width-50>
+         <button ion-button color="secondary" type="button" full round large (click)="selectPhoto()">
+           <ion-icon name="image"></ion-icon>
+         </button>
+       </ion-col>
+     </ion-row>
+   </ion-item>
+   <ion-item *ngIf="error">
+     <strong>{{error}}</strong>
+   </ion-item>
+   <ion-item>
+     <img *ngIf="myPhoto" class="img-responsive" [src]="myPhoto"/>
+   </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="primary" block>提交</button>
+  </div>
+
+</ion-content>
