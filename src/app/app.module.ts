@@ -2,46 +2,32 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-
-import { ReportPage } from '../pages/report/report';
-import { MorePage } from '../pages/more/more';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
-import { DishesPage } from '../pages/dishes/index';
+import { HttpModule } from '@angular/http';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {Camera} from '@ionic-native/camera';
-import {File} from "@ionic-native/file";
+import { Rest } from '../providers/rest/rest';
 
 @NgModule({
   declarations: [
     MyApp,
-    ReportPage,
-    MorePage,
-    HomePage,
-    DishesPage,
-    TabsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      preloadModules: true
+    }),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    ReportPage,
-    MorePage,
-    HomePage,
-    DishesPage,
-    TabsPage
+    MyApp
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    Camera,
-    File,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Rest
   ]
 })
 export class AppModule {}

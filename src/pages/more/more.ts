@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, AlertController, App } from 'ionic-angular';
+import { NavController, AlertController, App, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-more',
   templateUrl: 'more.html'

@@ -1,7 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
 import { Chart } from 'chart.js';
 
+@IonicPage()
 @Component({
   selector: 'page-report',
   templateUrl: 'report.html'

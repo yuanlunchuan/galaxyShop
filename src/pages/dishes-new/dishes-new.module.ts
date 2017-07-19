@@ -1,6 +1,9 @@
-import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { NgModule, ErrorHandler } from '@angular/core';
+import { IonicPageModule,IonicErrorHandler } from 'ionic-angular';
 import { DishesNewPage } from './dishes-new';
+
+import {Camera} from '@ionic-native/camera';
+import {File} from "@ionic-native/file";
 
 @NgModule({
   declarations: [
@@ -11,6 +14,11 @@ import { DishesNewPage } from './dishes-new';
   ],
   exports: [
     DishesNewPage
+  ],
+  providers: [
+    Camera,
+    File,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class DishesNewPageModule {}
